@@ -1,0 +1,22 @@
+select *
+from  students  
+where  date_of_birth between '1990-01-01' and '1999-12-31';  
+select * 
+from courses 
+where cfu > 10;
+
+select * 
+from  students 
+where  year(current_date())- year (date_of_birth) > 30;
+
+select *
+from degrees where level = 'magistrale';
+from courses where period = 'I semestre';
+select * 
+from exams where date = '2020-06-20' and hour > '14:00:00';
+
+select count(*)
+from departments  ;
+
+select count(*)
+from teachers where phone  is null;
